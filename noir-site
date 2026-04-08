@@ -1,1 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NOIR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #8B0000;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1520975922215-230c5d5b5c8b?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 64px;
+      letter-spacing: 4px;
+    }
+
+    .hero-content p {
+      margin: 20px 0;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      border: 1px solid #fff;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* SECTION */
+    section {
+      padding: 80px 40px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    /* PRODUCTS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      transition: 0.3s;
+    }
+
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product p {
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* BRAND TEXT */
+    .brand-text {
+      max-width: 600px;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px;
+      text-align: center;
+      border-top: 1px solid #111;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">NOIR</div>
+    <div class="nav-links">
+      <a href="#">SHOP</a>
+      <a href="#">COLLECTIONS</a>
+      <a href="#">ABOUT</a>
+    </div>
+    <div>
+      <a href="#">CART</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>NOIR</h1>
+      <p>Luxury Darkness. Worn Daily.</p>
+      <a href="#" class="btn">SHOP DROP 01</a>
+    </div>
+  </div>
+
+  <!-- DROP -->
+  <section>
+    <div class="section-title">DROP 01 — SILENCE</div>
+    <div class="grid">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" />
+        <h4>NOIR Hoodie</h4>
+        <p>£60</p>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15cf70489" />
+        <h4>NOIR Tee</h4>
+        <p>£30</p>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1520974735194-6c1d7c6d3b3e" />
+        <h4>NOIR Trousers</h4>
+        <p>£75</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND -->
+  <section>
+    <div class="brand-text">
+      NOIR is built on contrast.<br><br>
+      Dark, but wearable.<br>
+      Luxury, but accessible.<br><br>
+      No noise. Just presence.
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    NOIR © 2026
+  </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOIR</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+nav.scrolled {
+  background: rgba(0,0,0,0.9);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  font-size: 14px;
+  position: relative;
+}
+
+/* underline hover */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background: #8B0000;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1520975922215-230c5d5b5c8b?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  animation: fadeUp 1.5s ease;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  letter-spacing: 5px;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  opacity: 0.8;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: 1px solid #fff;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 60px;
+}
+
+/* TITLE */
+.section-title {
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+
+/* PRODUCTS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.product {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.product:hover img {
+  transform: scale(1.08);
+}
+
+.product h4 {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.product p {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+/* BRAND TEXT */
+.brand {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.brand-text {
+  max-width: 600px;
+  line-height: 1.8;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+/* LOOKBOOK */
+.lookbook {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.lookbook img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.lookbook img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* FOOTER */
+footer {
+  padding: 50px;
+  text-align: center;
+  border-top: 1px solid #111;
+  opacity: 0.6;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav id="navbar">
+  <div class="logo">NOIR</div>
+  <div class="nav-links">
+    <a href="#">SHOP</a>
+    <a href="#">COLLECTIONS</a>
+    <a href="#">ABOUT</a>
+  </div>
+  <div>CART</div>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>NOIR</h1>
+    <p>Luxury Darkness. Worn Daily.</p>
+    <a href="#" class="btn">SHOP DROP 01</a>
+  </div>
+</div>
+
+<section class="reveal">
+  <div class="section-title">DROP 01 — SILENCE</div>
+  <div class="grid">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+      <h4>NOIR Hoodie</h4>
+      <p>£60</p>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15cf70489">
+      <h4>NOIR Tee</h4>
+      <p>£30</p>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1520974735194-6c1d7c6d3b3e">
+      <h4>NOIR Trousers</h4>
+      <p>£75</p>
+    </div>
+  </div>
+</section>
+
+<section class="brand reveal">
+  <div class="brand-text">
+    NOIR is built on contrast.<br><br>
+    Dark, but wearable.<br>
+    Luxury, but accessible.<br><br>
+    No noise. Just presence.
+  </div>
+</section>
+
+<section class="lookbook reveal">
+  <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+  <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d">
+  <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+</section>
+
+<footer>
+  NOIR © 2026
+</footer>
+
+<script>
+// navbar scroll effect
+window.addEventListener("scroll", function() {
+  document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 50);
+});
+
+// reveal on scroll
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
